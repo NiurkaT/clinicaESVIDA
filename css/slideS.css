@@ -41,7 +41,7 @@ body {
 	flex-shrink: 0;
 	animation-name: slideS;
 	animation-duration: 20s;
-	animation-iteration-count: 3;
+	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
 
