@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLINICA ESVIDA LOGIN</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <section class="form-register">
+        <img src = "images/logo.png" alt="user-login">
+        <h4>CLINICA ESVIDA</h4>
+      <input id="correo" class = "controls" type="email" name="correo" placeholder="Ingrese su correo">
+      <input id="contraseña" class = "controls" type="password" name="correo" placeholder="Ingrese su contraseña">
+      <p><a href="#">¿Olvidó su contraseña?</a></p>
+      <button id = "boton" class = "boton" onclick="login()">Iniciar Sesion</button>
+      <p><a href="C:\Users\lopez\Desktop\CLININCA HTML\CLINICAESVIDA\index3.html">Registrarse</a>
+      </div></p>
+    </section>
+    <script src="main.js"></script>
+    <body>
+    <button class="audio-button" onclick="toggleAudio()">
+        Reproducir Audio
+    </button>
+
+    <audio id="audio" src="Audios/audio2.mp3"></audio>
+
+    <script>
+        var audio = document.getElementById("audio");
+
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+     <style>
+        button.audio-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -750%);
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #f1f1f1;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</body>
+</body>
+</html>

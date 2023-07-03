@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>Page title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+
+    </head>
+    <body>
+      <canvas id="myChart" width="200" height="80"></canvas>
+    </body>
+    <script>
+        var ctx= document.getElementById('myChart').getContext("2d");
+         var myChart= new Chart(ctx,{
+     type:"bar",
+     data:{
+      labels: ['A+', 'O+', 'B+', 'AB-', 'AB+', 'O-', 'A-', 'B-'],
+      datasets: [{
+        label: 'CANTIDAD DE PACIENTE SEGÚN TIPO DE SANGRE',
+        backgroundColor:"rgb(0,0,0)",
+        data: [300, 200, 150, 130, 120, 80,75,50],
+        borderWidth: 1
+         }]
+      },
+      options: {
+          scales: {
+            y: {
+              beginAtZero: true
+           }
+        }
+      }
+     });
+     </script>
+ </html>
